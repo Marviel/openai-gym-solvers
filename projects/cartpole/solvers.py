@@ -14,7 +14,7 @@ def hillclimb_solver(env, gym, generations, max_episode_steps,
     for _ in xrange(generations):
         new_parameters = parameters * (np.random.rand(4) * 2 - 1)\
                             * noise_scaling
-        reward = run_episode(env, new_parameters, max_episode_steps)
+        reward = hillclimb_run_episode(env, new_parameters, max_episode_steps)
         if reward > bestreward:
             bestreward = reward
             parameters = new_parameters

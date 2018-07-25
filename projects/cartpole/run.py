@@ -5,7 +5,11 @@
 import numpy as np
 
 
-def run_episode(env, parameters, max_steps, show=False):
+def hillclimb_run_episode(env, parameters, max_steps, show=False):
+    matmul_run_episode(env, parameters, max_steps, show=False)
+
+
+def matmul_run_episode(env, parameters, max_steps, show=False):
     observation = env.reset()
     totalreward = 0
     for _ in xrange(max_steps):

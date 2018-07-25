@@ -29,7 +29,7 @@ def main():
     plt.ylabel("Frequency")
     plt.show()
 
-    run_episode(env, best_params, 200, show=True)
+    hillclimb_run_episode(env, best_params, 200, show=True)
 
 
 if __name__ == "__main__":

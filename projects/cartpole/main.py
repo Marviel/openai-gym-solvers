@@ -6,7 +6,7 @@ import gym
 import matplotlib.pyplot as plt
 
 from .solvers import hillclimb_solver
-from .run import run_episode
+from .run import hillclimb_run_episode
 
 
 def main():

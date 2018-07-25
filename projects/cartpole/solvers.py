@@ -4,7 +4,7 @@
 #   Various solvers for the cartpole problem.
 import numpy as np
 
-from .run import run_episode
+from .run import hillclimb_run_episode
 
 
 def hillclimb_solver(env, gym, generations, max_episode_steps,
